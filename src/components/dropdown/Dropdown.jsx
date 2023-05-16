@@ -10,7 +10,7 @@ const Dropdown = ({ data, setDifficultyChange }) => {
         onChange={(e) => setDifficultyChange(e.target.value)}
       >
         {data.map((dt, i) => (
-          <option value={dt}>{dt}</option>
+          <option value={dt}>{dt.toUpperCase()}</option>
         ))}
       </select>
     </div>
